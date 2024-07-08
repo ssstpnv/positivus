@@ -32,7 +32,7 @@
 }
 
 :root {
-  font-family: "Space Grotesk Regular";
+  font-family: "Space Grotesk Regular", serif;
   line-height: 1.25;
 
   color-scheme: dark light;
@@ -79,8 +79,9 @@ h3 {
 button {
   border-radius: 10px;
   font-size: 1.2em;
-  font-family: "Space Grotesk Regular";
+  font-family: "Space Grotesk Regular", serif;
   background-color: #1a1a1a;
+  color: #ffffff;
   cursor: pointer;
 }
 
