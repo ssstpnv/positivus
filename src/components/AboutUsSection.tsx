@@ -13,6 +13,6 @@ function AboutUsSection() {
       <img src={illustration} alt="About Us Illustration" />
     </div>
   );
-};
+}
 
 export default AboutUsSection;
