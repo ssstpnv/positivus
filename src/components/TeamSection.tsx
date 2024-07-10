@@ -1,10 +1,11 @@
 import TeamMemberCard from './TeamMemberCard.tsx';
 import mockTeamMembersData from '../mockData/mockTeamMembers.ts';
 import SectionTitle from "./shared/SectionTitle.tsx";
+import Button from "./shared/Button.tsx";
 
 function TeamSection() {
   return (
-    <div>
+    <div className="mt-[140px]">
       <SectionTitle
         title="Team"
         description="Meet the skilled and experienced team behind our
@@ -19,9 +20,7 @@ function TeamSection() {
         ))}
       </div>
       <div className="flex justify-end mt-10">
-        <button className="w-64 h-16">
-          See all team
-        </button>
+        <Button variant="primary" label="See all team" style="w-64 h-16" />
       </div>
     </div>
   )
