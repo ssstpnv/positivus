@@ -18,7 +18,7 @@ export default {
         "p-grey": "#F3F3F3",
       },
       boxShadow: {
-        bottom: '0px 4px rgb(25, 26, 35)',
+        bottom: '0px 4px rgb(0, 0, 0)',
       },
       screens: {
         mobile: '430px',
