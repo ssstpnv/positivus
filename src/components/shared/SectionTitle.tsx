@@ -6,7 +6,7 @@ type SectionTitleProps = {
 function SectionTitle({ title, description }: SectionTitleProps): JSX.Element {
   return (
     <div className="flex gap-10 items-center">
-      <h2 className="font-bold bg-p-green px-1.5 rounded-lg">
+      <h2 className="bg-p-green px-2 py-1 rounded-lg">
         {title}
       </h2>
       {description && (
