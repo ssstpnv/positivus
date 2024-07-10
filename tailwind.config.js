@@ -28,6 +28,20 @@ export default {
         desktop: '1440px',
         // => @media (min-width: 1440px) { ... }
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'infinite-scroll-2': 'infinite-scroll-2 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'infinite-scroll-2': {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(0)' },
+        },
+      }
     },
   },
   plugins: [],

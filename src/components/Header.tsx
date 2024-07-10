@@ -1,4 +1,4 @@
-import logo from '../assets/images/logo/positivus-black.svg';
+import logo from '../assets/images/logos/positivus-black.svg';
 import Button from "./shared/Button.tsx";
 import Link from "./shared/Link.tsx";
 
