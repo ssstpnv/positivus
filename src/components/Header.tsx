@@ -10,7 +10,7 @@ function Header () {
       <img src={logo} alt="Positivus Logo" />
       <nav className="flex items-center gap-10">
         {headerMenuOptions.map((option) => (
-          <Link href="https://example.com" key={option} label={option} />
+          <Link href="https://example.com" key={option} label={option} variant="green" />
         ))}
         <Button label="Request a quote" variant="secondary" style="w-60 h-16" />
       </nav>

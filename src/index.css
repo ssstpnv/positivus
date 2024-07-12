@@ -34,7 +34,7 @@
     @apply text-6xl leading-[76px] font-medium;
   }
   h2 {
-    @apply text-4xl font-medium;
+    @apply text-4xl font-medium leading-[50px];
   }
   h3 {
     @apply text-3xl font-medium;
@@ -48,5 +48,20 @@
   button {
     @apply rounded-2xl text-lg font-regular;
     cursor: pointer;
+  }
+}
+
+@layer components {
+  .card {
+    @apply border border-solid border-black rounded-[45px] shadow-bottom;
+  }
+}
+
+@layer utilities {
+  .highlight-green {
+    @apply bg-p-green px-2 rounded-lg;
+  }
+  .highlight-grey {
+    @apply bg-p-grey px-2 rounded-lg;
   }
 }

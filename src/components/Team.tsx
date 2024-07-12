@@ -3,7 +3,7 @@ import mockTeamMembersData from '../mockData/mockTeamMembers.ts';
 import SectionTitle from "./shared/SectionTitle.tsx";
 import Button from "./shared/Button.tsx";
 
-function TeamSection() {
+function Team() {
   return (
     <div className="mt-[140px]">
       <SectionTitle
@@ -26,4 +26,4 @@ function TeamSection() {
   )
 }
 
-export default TeamSection;
+export default Team;

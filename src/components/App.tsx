@@ -1,16 +1,18 @@
 import './App.css';
 import Header from './Header';
-import AboutUsSection from "./AboutUsSection.tsx";
+import AboutUs from "./AboutUs.tsx";
 import LogoCarousel from "./LogoCarousel.tsx";
-import TeamSection from './TeamSection.tsx';
+import Services from "./Services.tsx";
+import Team from './Team.tsx';
 
 function App() {
   return (
     <div className="app-container">
       <Header />
-      <AboutUsSection />
+      <AboutUs />
       <LogoCarousel />
-      <TeamSection />
+      <Services />
+      <Team />
     </div>
   )
 }

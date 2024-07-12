@@ -10,7 +10,7 @@ function TeamMemberCard({
   linkedInUrl
 }: TeamMember) {
     return (
-      <div className="flex flex-col w-[390px] border-solid border border-black rounded-[40px] px-9 py-10 gap-y-7 shadow-bottom bg-white">
+      <div className="card flex flex-col w-[390px] px-9 py-10 gap-y-7 bg-white">
         <div className="flex flex-row">
           <ImageCrossClip imgUrl={imgUrl} />
           <div className="flex flex-col justify-between text-left basis-full">

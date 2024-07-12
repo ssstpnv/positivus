@@ -2,7 +2,7 @@ import Button from "./shared/Button.tsx";
 import illustration from "../assets/images/illustrations/01.svg";
 
 
-function AboutUsSection() {
+function AboutUs() {
   return (
     <div className="mt-[70px] flex justify-between">
       <div className="flex flex-col gap-9 text-left max-w-[530px]">
@@ -15,4 +15,4 @@ function AboutUsSection() {
   );
 }
 
-export default AboutUsSection;
+export default AboutUs;
