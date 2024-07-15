@@ -2,6 +2,7 @@ const colorSchemeOptions = {
   green: 'text-black after:bg-p-green',
   black: 'text-black after:bg-black',
   grey: 'text-p-grey after:bg-p-grey',
+  'green-full': 'text-p-green after:bg-p-green',
 };
 type LinkVariants = keyof typeof colorSchemeOptions;
 type LinkProps = {
@@ -16,7 +17,7 @@ function Link ({ href, label, onClick, variant }: LinkProps) {
 
   return (
     <a href={href} target="_blank" className={`text-lg relative ${colorScheme}
-      after:h-[3px] after:absolute after:w-0 after:left-0 after:-bottom-[3px] after:duration-300
+      after:h-[3px] after:absolute after:w-0 after:left-0 after:-bottom-[3px] after:rounded after:duration-300
       hover:after:w-full`}
       onClick={onClick}
     >

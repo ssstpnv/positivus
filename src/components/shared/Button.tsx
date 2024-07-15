@@ -1,5 +1,5 @@
 const ButtonStyles = {
-  primary: 'bg-p-black text-white border border-black hover:bg-p-green hover:text-black duration-300' as string,
+  primary: 'bg-p-black text-white hover:bg-p-green hover:text-black duration-300' as string,
   secondary: 'bg-white text-black border border-black hover:bg-p-green hover:text-black duration-300' as string,
 };
 

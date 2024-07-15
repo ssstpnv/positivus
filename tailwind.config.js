@@ -22,11 +22,9 @@ export default {
       },
       screens: {
         mobile: '430px',
-        // => @media (min-width: 430px) { ... }
-        tablet: '1024px',
-        // => @media (min-width: 1024px) { ... }
+        tablet: '768px',
+        tabletLarge: '840px',
         desktop: '1440px',
-        // => @media (min-width: 1440px) { ... }
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',

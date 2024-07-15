@@ -11,7 +11,7 @@ function Team() {
         description="Meet the skilled and experienced team behind our
          successful digital marketing strategies"
       />
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 desktop:grid-cols-3 mt-20">
+      <div className="grid grid-cols-1 gap-5 desktop:gap-10 tabletLarge:grid-cols-2 desktop:grid-cols-3 mt-20">
         {mockTeamMembersData.map((teamMember) => (
           <TeamMemberCard
             key={teamMember.id}
