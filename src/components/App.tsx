@@ -4,6 +4,7 @@ import LogoCarousel from "./LogoCarousel.tsx";
 import Services from "./Services.tsx";
 import Promo from "./Promo.tsx";
 import CaseStudies from "./CaseStudies.tsx";
+import WorkingProcess from "./WorkingProcess.tsx";
 import Team from './Team.tsx';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Promo />
       <CaseStudies />
+      <WorkingProcess />
       <Team />
     </div>
   )
