@@ -17,7 +17,7 @@ function CaseStudies() {
         Success through Our Case Studies"
       />
       <div className="rounded-[45px] mt-[80px] bg-p-black py-[70px] flex flex-col tablet:flex-row justify-between">
-        {mockStudies.map(({ id, description, url}, index) => (
+        {mockStudies.map(({ id, description, url}) => (
           <div key={id} className="relative text-left px-[60px] [&:not(:last-child)]:after:border-l-[1px] [&:not(:last-child)]:after:border-white [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:top-0 [&:not(:last-child)]:after:bottom-0 [&:not(:last-child)]:after:right-0">
             <p className="text-white">
               {description}
