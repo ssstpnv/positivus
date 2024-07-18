@@ -11,11 +11,13 @@ const mockStudies = [
 function CaseStudies() {
   return (
     <div className="mt-[140px]">
-      <SectionTitle
-        title="Case Studies"
-        description="Explore Real-Life Examples of Our Proven Digital Marketing
-        Success through Our Case Studies"
-      />
+      <SectionTitle title="Case Studies">
+        <p>
+          Explore Real-Life Examples of Our Proven Digital Marketing
+          <br className="mobile:hidden desktop:inline"/>
+          Success through Our Case Studies
+        </p>
+      </SectionTitle>
       <div className="rounded-[45px] mt-[80px] bg-p-black py-[70px] flex flex-col tablet:flex-row justify-between">
         {mockStudies.map(({ id, description, url}) => (
           <div key={id} className="relative text-left px-[60px] [&:not(:last-child)]:after:border-l-[1px] [&:not(:last-child)]:after:border-white [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:top-0 [&:not(:last-child)]:after:bottom-0 [&:not(:last-child)]:after:right-0">

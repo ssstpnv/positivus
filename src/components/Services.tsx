@@ -1,5 +1,5 @@
 import SectionTitle from "./shared/SectionTitle.tsx";
-import ServiceCard from './ServiceCard.tsx';
+import ServiceCard, { CardVariants } from './ServiceCard.tsx';
 import illustration0 from '../assets/images/illustrations/tokyo-magnifier-web-search-with-elements.png';
 import illustration1 from '../assets/images/illustrations/tokyo-selecting-a-value-in-the-browser-window 1.png';
 import illustration2 from '../assets/images/illustrations/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.png';
@@ -19,14 +19,18 @@ const services = [
 function Services() {
   return (
     <div className="mt-[140px]">
-      <SectionTitle title="Services" description="At our digital marketing agency, we offer a range of services to
-      help businesses grow and succeed online. These services include:"
-      />
+      <SectionTitle title="Services">
+        <p>
+          At our digital marketing agency, we offer a range of services to
+          <br className="mobile:hidden desktop:inline"/>
+          help businesses grow and succeed online. These services include:
+        </p>
+      </SectionTitle>
       <div className="grid grid-cols-1 gap-10 desktop:grid-cols-2 mt-20">
         {services.map(({ id, labels, img, link, colorVariant }) => (
           <ServiceCard
             key={id}
-            variant={colorVariant}
+            variant={colorVariant as CardVariants}
             labels={labels}
             img={img}
             link={link}

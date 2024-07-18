@@ -22,9 +22,9 @@ const colorSchemeOptions = {
     linkVariant: 'grey',
   },
 };
-type CardVariants = keyof typeof colorSchemeOptions;
+export type CardVariants = keyof typeof colorSchemeOptions;
 type ServiceCardProps = {
-  labels: string;
+  labels: string[];
   link: string;
   img: string;
   variant: CardVariants;
@@ -45,7 +45,7 @@ function ServiceCard({ labels, link, img, variant = 'grey' }: ServiceCardProps) 
         </div>
         <div className="flex gap-[15px] items-center">
           <img src={icon} alt="arrow" />
-          <Link href={link} label="Learn More" variant={linkVariant} />
+          <Link href={link} label="Learn More" variant={linkVariant as CardVariants} />
         </div>
       </div>
       <img src={img} alt={`${labels[0]} illustration`} />

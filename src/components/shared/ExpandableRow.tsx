@@ -3,7 +3,7 @@ import plusIcon from "../../assets/images/icons/plus.svg";
 import minusIcon from "../../assets/images/icons/minus.svg";
 
 type ExpandableRowProps = {
-  number?: string;
+  number?: string | number;
   title: string;
   children: React.ReactNode;
 };
