@@ -10,7 +10,7 @@ function AboutUs() {
         <p className="text-xl">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
         <Button label="Book a consultation" variant="primary" style="px-9 py-5 w-fit" />
       </div>
-      <img src={illustration} alt="About Us Illustration" />
+      <img src={illustration} alt="About Us Illustration" className="hidden lg:block" />
     </div>
   );
 }

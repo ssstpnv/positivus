@@ -9,7 +9,7 @@ function Promo() {
         <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
         <Button label="Get your free proposal" variant="primary" style="px-9 py-5 w-fit" />
       </div>
-      <img src={promoIllustration} alt="Promo Illustration" className="absolute right-32" />
+      <img src={promoIllustration} alt="Promo Illustration" className="hidden absolute lg:block tablet:right-5 desktop:right-32" />
     </div>
   );
 }

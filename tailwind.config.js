@@ -24,7 +24,7 @@ export default {
         mobile: '430px',
         tablet: '768px',
         tabletLarge: '840px',
-        desktop: '1440px',
+        desktop: '1280px',
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
