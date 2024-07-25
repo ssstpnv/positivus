@@ -6,10 +6,11 @@ import Promo from "./Promo.tsx";
 import CaseStudies from "./CaseStudies.tsx";
 import WorkingProcess from "./WorkingProcess.tsx";
 import Team from './Team.tsx';
+import Testimonials from "./Testimonials.tsx";
 
 function App() {
   return (
-    <div className="max-w-screen-desktop mx-5 desktop:mx-auto">
+    <div className="max-w-screen-desktop px-5 tablet:px-16 desktop:mx-auto">
       <Header />
       <AboutUs />
       <LogoCarousel />
@@ -18,6 +19,7 @@ function App() {
       <CaseStudies />
       <WorkingProcess />
       <Team />
+      <Testimonials />
     </div>
   )
 }
