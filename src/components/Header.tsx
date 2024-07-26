@@ -30,7 +30,7 @@ function Header () {
         {headerMenuOptions.map((option) => (
           <Link href="https://example.com" key={option} label={option} variant="green" />
         ))}
-        <Button label="Request a quote" variant="secondary" style="w-60 h-16" />
+        <Button label="Request a quote" variant="secondary" className="w-60 h-16" />
       </nav>
     </header>
   );

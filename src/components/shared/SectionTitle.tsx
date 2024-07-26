@@ -5,7 +5,7 @@ type SectionTitleProps = {
 
 function SectionTitle({ title, children }: SectionTitleProps) {
   return (
-    <div className="flex gap-10 items-center text-left">
+    <div className="flex flex-col md:flex-row gap-10 items-center text-center md:text-left">
       <h2 className="highlight-green">
         {title}
       </h2>

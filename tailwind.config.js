@@ -19,6 +19,7 @@ export default {
       },
       boxShadow: {
         bottom: '0px 4px rgb(0, 0, 0)',
+        single: '0 0 0 1px rgba(0, 0, 0)',
       },
       screens: {
         mobile: '430px',

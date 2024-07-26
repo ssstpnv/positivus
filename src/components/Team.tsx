@@ -22,7 +22,7 @@ function Team() {
         ))}
       </div>
       <div className="flex justify-end mt-10">
-        <Button variant="primary" label="See all team" style="w-64 h-16" />
+        <Button variant="primary" label="See all team" className="w-64 h-16" />
       </div>
     </div>
   )

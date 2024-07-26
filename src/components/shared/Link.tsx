@@ -13,7 +13,7 @@ type LinkProps = {
 };
 
 function Link ({ href, label, onClick, variant }: LinkProps) {
-  const colorScheme = colorSchemeOptions[variant] || colorSchemeOptions.green;
+  const colorScheme = colorSchemeOptions[variant as LinkVariants] || colorSchemeOptions.green;
 
   return (
     <a href={href} target="_blank" className={`text-lg relative ${colorScheme}

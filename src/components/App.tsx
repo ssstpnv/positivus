@@ -7,6 +7,7 @@ import CaseStudies from "./CaseStudies.tsx";
 import WorkingProcess from "./WorkingProcess.tsx";
 import Team from './Team.tsx';
 import Testimonials from "./Testimonials.tsx";
+import ContactUs from "./ContactUs.tsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <ContactUs />
     </div>
   )
 }
