@@ -16,6 +16,7 @@ export default {
         "p-green": "#B9FF66",
         "p-black": "#191A23",
         "p-grey": "#F3F3F3",
+        "p-grey-dark": "#292A32"
       },
       boxShadow: {
         bottom: '0px 4px rgb(0, 0, 0)',

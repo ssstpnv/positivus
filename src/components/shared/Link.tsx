@@ -10,15 +10,16 @@ type LinkProps = {
   label: string;
   variant?: LinkVariants;
   onClick?: () => void;
+  className?: string;
 };
 
-function Link ({ href, label, onClick, variant }: LinkProps) {
+function Link ({ href, label, onClick, variant, className }: LinkProps) {
   const colorScheme = colorSchemeOptions[variant as LinkVariants] || colorSchemeOptions.green;
 
   return (
     <a href={href} target="_blank" className={`text-lg relative ${colorScheme}
       after:h-[3px] after:absolute after:w-0 after:left-0 after:-bottom-[3px] after:rounded after:duration-300
-      hover:after:w-full`}
+      hover:after:w-full ${className}`}
       onClick={onClick}
     >
       {label}

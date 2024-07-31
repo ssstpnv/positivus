@@ -24,10 +24,12 @@ function ContactUs() {
               ]}
             />
           </div>
-          <TextInput label="Name" placeholder="Name" className="mt-[40px]" />
-          <TextInput label="Email" placeholder="Email" type="email" required className="mt-[25px]" />
-          <TextArea label="Message" placeholder="Message" required className="mt-[25px]" />
-          <Button label="Send Message" className="py-5 mt-[40px]" />
+          <TextInput label="Name" placeholder="Name" containerClassName="mt-[40px]" />
+          <TextInput label="Email" placeholder="Email" type="email" required containerClassName="mt-[25px]" />
+          <TextArea label="Message" placeholder="Message" required containerClassName="mt-[25px]" />
+          <Button className="py-5 mt-[40px]">
+            Send Message
+          </Button>
         </div>
         <div className="hidden lg:flex flex-grow relative my-16">
           <svg height="100%" viewBox="0 0 651 649" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute -right-[310px]">

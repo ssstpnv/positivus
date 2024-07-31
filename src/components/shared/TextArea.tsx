@@ -3,14 +3,15 @@ type TextAreaProps = {
   placeholder?: string;
   required?: boolean;
   className?: string;
+  containerClassName?: string;
   rows?: number;
 }
 
-function TextArea({ label, placeholder, rows = 8, required, className }: TextAreaProps) {
+function TextArea({ label, placeholder, rows = 8, required, containerClassName, className }: TextAreaProps) {
   const inputLabel = required ? `${label} *` : label;
 
   return (
-    <div className={`flex flex-col ${className}`}>
+    <div className={`flex flex-col ${containerClassName}`}>
       <label htmlFor="text-area">
         {inputLabel}
       </label>
@@ -18,7 +19,7 @@ function TextArea({ label, placeholder, rows = 8, required, className }: TextAre
         name="text-area"
         placeholder={placeholder}
         rows={rows}
-        className="border border-black rounded-[14px] mt-2 px-7 py-4"
+        className={`border border-black rounded-[14px] mt-2 px-7 py-4 ${className}`}
       />
     </div>
   );

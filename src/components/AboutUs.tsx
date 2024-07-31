@@ -8,7 +8,7 @@ function AboutUs() {
       <div className="flex flex-col gap-9 text-left max-w-[530px]">
         <h1>Navigating the digital landscape for success</h1>
         <p className="text-xl">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-        <Button label="Book a consultation" variant="primary" className="px-9 py-5 w-fit" />
+        <Button className="px-9 py-5 w-fit">Book a consultation</Button>
       </div>
       <img src={illustration} alt="About Us Illustration" className="hidden lg:block" />
     </div>
