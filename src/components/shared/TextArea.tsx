@@ -19,7 +19,7 @@ function TextArea({ label, placeholder, rows = 8, required, containerClassName, 
         name="text-area"
         placeholder={placeholder}
         rows={rows}
-        className={`border border-black rounded-[14px] mt-2 px-7 py-4 ${className}`}
+        className={`border border-black rounded-[14px] mt-2 px-7 py-4 focus:outline-none focus:border focus:border-p-green ${className}`}
       />
     </div>
   );

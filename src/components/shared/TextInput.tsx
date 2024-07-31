@@ -22,7 +22,7 @@ function TextInput({ label, placeholder, required, containerClassName, className
         name="text-input"
         type={type}
         placeholder={placeholder}
-        className={`border border-black rounded-[14px] mt-2 px-7 py-4 ${className}`}
+        className={`border border-black rounded-[14px] mt-2 px-7 py-4 focus:outline-none focus:border focus:border-p-green ${className}`}
       />
     </div>
   );
