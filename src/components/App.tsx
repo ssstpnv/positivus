@@ -8,6 +8,7 @@ import WorkingProcess from "./WorkingProcess.tsx";
 import Team from './Team.tsx';
 import Testimonials from "./Testimonials.tsx";
 import ContactUs from "./ContactUs.tsx";
+import Footer from "./Footer.tsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Team />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </div>
   )
 }

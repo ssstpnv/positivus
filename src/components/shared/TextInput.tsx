@@ -6,14 +6,15 @@ type TextInputProps = {
   placeholder?: string;
   required?: boolean;
   className?: string;
+  containerClassName?: string;
   type?: HTMLInputTypeAttribute;
 };
 
-function TextInput({ label, placeholder, required, className, type = 'text' }: TextInputProps) {
+function TextInput({ label, placeholder, required, containerClassName, className, type = 'text' }: TextInputProps) {
   const inputLabel = required ? `${label} *` : label;
 
   return (
-    <div className={`flex flex-col ${className}`}>
+    <div className={`flex flex-col ${containerClassName}`}>
       <label htmlFor="text-input">
         {inputLabel}
       </label>
@@ -21,7 +22,7 @@ function TextInput({ label, placeholder, required, className, type = 'text' }: T
         name="text-input"
         type={type}
         placeholder={placeholder}
-        className="border border-black rounded-[14px] mt-2 px-7 py-4"
+        className={`border border-black rounded-[14px] mt-2 px-7 py-4 ${className}`}
       />
     </div>
   );
