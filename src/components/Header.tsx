@@ -15,17 +15,17 @@ function Header () {
   };
 
   return (
-    <header className="flex items-center justify-between mt-[60px]">
-      <img src={logo} alt="Positivus Logo" />
+    <header className="flex items-center justify-between mt-[30px] tablet:mt-[60px]">
+      <img src={logo} alt="Positivus Logo" className="max-w-[144px] tablet:max-w-none" />
       <button onClick={onToggleMenu}>
         <img src={isMenuOpen ? closeIcon : burgerMenuIcon} alt="Menu" className="desktop:hidden" />
       </button>
       <nav className={`
-        flex flex-col justify-start desktop:flex-row desktop:justify-end items-center gap-6 desktop:gap-10 transition-all ease-in-out duration-300 overflow-hidden
-        ${isMenuOpen
-          ? 'flex-col mobile:max-desktop:fixed w-full h-full right-0 top-28 bg-white items-end z-10'
-          : 'flex-col mobile:max-desktop:fixed w-full h-full -right-full top-28 bg-white items-end z-10'
-        }
+        flex flex-col justify-start items-center fixed top-28 w-full h-full bg-white z-10 gap-6 pt-5
+        tablet:w-1/2 tablet:pr-16 tablet:items-end
+        desktop:flex-row desktop:static desktop:justify-end desktop:items-center desktop:gap-10 desktop:bg-transparent desktop:w-auto desktop:h-auto desktop:p-0
+        transition-all ease-in-out duration-300 overflow-hidden
+        ${isMenuOpen ? 'right-0' : '-right-full'}
       `}>
         {headerMenuOptions.map((option) => (
           <Link href="https://example.com" key={option} label={option} variant="green" />

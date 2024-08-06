@@ -31,10 +31,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
   h1 {
-    @apply text-6xl leading-[76px] font-medium;
+    @apply text-[43px] leading-[54px] tablet:text-6xl tablet:leading-[76px] font-medium;
   }
   h2 {
-    @apply text-4xl font-medium leading-[50px];
+    @apply text-[36px] leading-[45px] tablet:text-4xl tablet:leading-[50px] font-medium;
   }
   h3 {
     @apply text-3xl font-medium;
@@ -43,7 +43,7 @@
     @apply text-xl font-medium;
   }
   p {
-    @apply text-lg leading-6 font-regular;
+    @apply text-[16px] leading-[24px] tablet:text-lg tablet:leading-6 font-regular;
   }
   label {
     @apply font-regular;

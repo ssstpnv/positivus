@@ -34,7 +34,7 @@ function ServiceCard({ labels, link, img, variant = 'grey' }: ServiceCardProps) 
   const { background, highlight, icon, linkVariant } = colorSchemeOptions[variant];
 
   return (
-    <div className={`card p-12 flex justify-between ${background}`}>
+    <div className={`card p-12 flex ${background}`}>
       <div className="flex flex-col justify-between">
         <div>
           {labels.map((label) => (
@@ -43,12 +43,12 @@ function ServiceCard({ labels, link, img, variant = 'grey' }: ServiceCardProps) 
             </h3>
           ))}
         </div>
+        <img src={img} alt={`${labels[0]} illustration`}/>
         <div className="flex gap-[15px] items-center">
-          <img src={icon} alt="arrow" />
-          <Link href={link} label="Learn More" variant={linkVariant as CardVariants} />
+          <img src={icon} alt="arrow"/>
+          <Link href={link} label="Learn More" variant={linkVariant as CardVariants}/>
         </div>
       </div>
-      <img src={img} alt={`${labels[0]} illustration`} />
     </div>
   );
 }
