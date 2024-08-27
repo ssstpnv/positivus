@@ -5,8 +5,8 @@ import StarIcon from "./shared/StarIcon.tsx";
 import mockTestimonials from "../mockData/mockTestimonials.ts";
 
 function Testimonials() {
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);
-  const [selectedItemOffset, setSelectedItemOffset] = useState<number>(0);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedItemOffset, setSelectedItemOffset] = useState(0);
 
   const testimonialItemRef = useRef<HTMLDivElement>(null);
   const testimonialsScrollIntervalRef = useRef<ReturnType<typeof setInterval>>();
@@ -52,15 +52,15 @@ function Testimonials() {
   }, []);
 
   return (
-    <div className="mt-[100px]">
+    <div>
       <SectionTitle title="Testimonials">
         <p>
           Hear from Our Satisfied Clients: Read Our Testimonials
-          <br className="mobile:hidden desktop:inline"/>
+          <br className="hidden desktop:inline" />
           to Learn More about Our Digital Marketing Services
         </p>
       </SectionTitle>
-      <div className="rounded-[45px] mt-[80px] bg-p-black py-20 overflow-hidden">
+      <div className="rounded-[45px] bg-p-black py-20 overflow-hidden">
         <div className="flex justify-center relative w-full tablet:w-[600px] h-[335px] mx-auto">
           <div className="flex absolute w-full transition-all duration-300" style={{ left: -selectedItemOffset }}>
             {mockTestimonials.map(({ id, text, author, position }) => (

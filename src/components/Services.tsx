@@ -18,15 +18,15 @@ const services = [
 
 function Services() {
   return (
-    <div className="mt-[140px]">
+    <div>
       <SectionTitle title="Services">
         <p>
           At our digital marketing agency, we offer a range of services to
-          <br className="mobile:hidden desktop:inline"/>
+          <br className="hidden desktop:inline"/>
           help businesses grow and succeed online. These services include:
         </p>
       </SectionTitle>
-      <div className="grid grid-cols-1 gap-10 desktop:grid-cols-2 mt-20">
+      <div className="grid grid-cols-1 gap-8 desktop:gap-10 desktop:grid-cols-2">
         {services.map(({ id, labels, img, link, colorVariant }) => (
           <ServiceCard
             key={id}

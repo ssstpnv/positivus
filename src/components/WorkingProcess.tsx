@@ -17,15 +17,15 @@ function WorkingProcess() {
   }
 
   return (
-    <div className="mt-[140px]">
+    <div>
       <SectionTitle title="Our Working Process">
         <p>
           Step-by-Step Guide to Achieving
-          <br className="mobile:hidden desktop:inline" />
+          <br className="hidden desktop:inline" />
           Your Business Goals
         </p>
       </SectionTitle>
-      <div className="mt-20 flex flex-col gap-7">
+      <div className="flex flex-col gap-5 tablet:gap-7">
         {mockWorkingProcessSteps.map(({ id, name, description, }, index) => (
           <ExpandableRow key={id} number={getStepNumber(index)} title={name}>
             <p>{description}</p>

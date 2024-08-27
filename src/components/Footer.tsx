@@ -10,7 +10,7 @@ const headerMenuOptions = ['About Us', 'Services', 'Use Cases', 'Pricing', 'Blog
 
 function Footer() {
   return (
-    <div className="mt-[140px] tablet:rounded-t-[45px] bg-p-black px-[20px] py-8 tablet:p-14 absolute left-0 right-0 tablet:static">
+    <div className="mt-[80px] tablet:mt-[140px] tablet:rounded-t-[45px] bg-p-black px-[20px] py-8 tablet:p-14 absolute left-0 right-0 tablet:static">
       <div className="flex flex-col gap-8 tablet:gap-0 tablet:flex-row items-center justify-between">
         <img src={positivusLogo} alt="positivus logo" className="max-w-[180px]" />
         <nav className="flex flex-col tablet:flex-row gap-6 text-center">

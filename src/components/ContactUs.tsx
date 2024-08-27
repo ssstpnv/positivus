@@ -6,7 +6,7 @@ import Button from "./shared/Button.tsx";
 
 function ContactUs() {
   return (
-    <div className="mt-[100px]">
+    <div>
       <SectionTitle title="Contact Us">
         <p>
           Connect with Us: Let's Discuss Your
@@ -14,7 +14,7 @@ function ContactUs() {
           Digital Marketing Needs
         </p>
       </SectionTitle>
-      <div className="flex justify-between mt-[80px] rounded-[45px] bg-p-grey overflow-hidden">
+      <div className="flex justify-between rounded-[45px] bg-p-grey overflow-hidden">
         <div className="flex flex-col flex-grow justify-start w-full lg:max-w-[650px] p-7 lg:p-16 z-10">
           <div className="flex gap-8">
             <RadioGroup
