@@ -2,6 +2,8 @@
 
 Webpage for the imaginary digital marketing agency.
 
+It is still work in progress, but you can check out the **live demo here**: [Positivus](https://ssstpnv.github.io/positivus/)
+
 The main target of this project is to get some basic practice with Tailwind CSS and a little bit of TypeScript.
 
 ## Running the project
